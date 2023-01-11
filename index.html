@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <img
+        id="logo"
+        src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+        alt="logo"
+      />
+      <h1>Understanding the fundamentals of state in Javascript</h1>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/vamshi-jannu-a6a650200"
+          target="_blank"
+          >by Vamshi Jannu</a
+        >
+      </p>
+    </header>
+    <main>
+      <section id="utilize">
+        <p>
+          Chapter 3 from the book; Vumbula React — Co-authored by John Kagga<br />
+          In earlier chapters, we’ve dealt mostly with functional React
+          components that do not require state management. This chapter’s main
+          focus is on state, its management and components that
+          <a class="step" data-number="0" href="#state"
+            >utilize</a
+          >
+          it in React.
+        </p>
+      </section>
+      <section id="state">
+        <h2>What is State?</h2>
+        <p>
+          State is a JavaScript object that stores a component’s dynamic data
+          and determines the component’s behaviour. Because state is dynamic, it
+          enables a component to keep track of changing information in between
+          renders and for it to be dynamic and interactive.<br />
+          State is similar to props but unlike props, it is private to a
+          component and is controlled solely by the said component. In the
+          examples from previous chapters, the behaviour of components has
+          primarily depended on the props that are passed down to them. In those
+          cases, the components that receive the props have no control over them
+          because props are
+          <a class="step" data-number="1" href="#component">read-only</a> .
+        </p>
+      </section>
+      <section id="component">
+        <h2>Adding State to a Class Component</h2>
+        <pre>
+          <p><span class="selector">class Greeting extends React.Component </span>{
+<span class="selector">render</span>(){
+<span class="selector">return</span>&lt;<span class="selector">h1</span>&gt;<span class="selector">I’m a component in need of some state!</span>&lt;<span class="selector">h1</span>&gt;;
+        }
+      } </p> </pre>
+        <p>
+          Adding state to the Greeting component above involves defining within
+          the class component, a constructor function that assigns the initial
+          state using this.state.<br/>
+          want to know about
+          <a class="step"  data-number="2" href="#dev-tools">Dev Tools?</a>
+        </p>
+      </section>
+      <section id="dev-tools">
+        <h2>Investigating State using React Dev Tools</h2>
+        <p>
+          The devtools are available for download on both Mozilla Firefox
+          Add-ons and the Chrome Web Store. Follow the appropriate
+          <a
+            href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"
+            >link</a
+          >
+          to install the devtools depending on which browser you have installed
+          on your computer.<br />
+          Throughout the rest of this book, Chrome will be used as the browser
+          of choice. In order to confirm successful installation of the devtools
+          on Chrome, open the developer tools window using Cmd+Opt+I on a Mac or
+          Ctrl+Alt+I on a windows PC. You should now see a React
+          <a class="step" data-number="3"href="#game">Tab</a>.
+        </p>
+      </section>
+
+      <section id="game">
+        <h2>Learn Using React</h2>
+        <p>
+          Developed a 'Guess the Number' game using Html, CSS, Javascript.
+          Designed and implemented the user interface, including input fields
+          and buttons for submitting guesses and receiving feedback. Wrote code
+          to generate a random number, receive and validate user input, and
+          provide feedback to the player indicating whether their guess was too
+          high or too low. Utilized variables, loops, and conditional statements
+          to implement the game logic. Tested and debugged the program to ensure
+          correct functionality
+        </p>
+        <div id="game-img"></div>
+        <div class="game-btn">
+          <a
+            class="button"
+            href="https://vamshijannu.github.io/Guess-Game.github.io/"
+            >Play The Game</a
+          >
+        </div>
+        <h2>Liked it, Share the love!</h2>
+        <nav class="buttons">
+          <a
+            class="button github"
+            href="https://github.com/jgthms/web-design-in-4-minutes"
+            target="_blank"
+          >
+            <em>Download on</em> <strong>GitHub</strong>
+          </a>
+          <a
+            class="button facebook"
+            href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F"
+            rel="nofollow"
+            target="_blank"
+          >
+            <em>Share on</em> <strong>Facebook</strong>
+          </a>
+          <a
+            class="button twitter"
+            data-social-target="https://jgthms.com/web-design-in-4-minutes/"
+            href="https://twitter.com/intent/tweet?text=Web%20Design%20in%204%20minutes&amp;url=https%3A%2F%2Fjgthms.com%2Fweb-design-in-4-minutes%2F&amp;via=jgthms"
+            rel="nofollow"
+            target="_blank"
+          >
+            <em>Share on</em> <strong>Twitter</strong>
+          </a>
+         
+        </nav>
+        <p> have you shared the game? good now you are eligible to click          <a class="step" data-number="4"href="#splash">here </a>.</p>
+      </section>
+      <section id="splash">
+        <h2>Learn how to design with code!</h2>
+        <p>you can use resources like lorem picsum to generate random photos like below</p>
+        <nav class="resources">
+          <div class="cards">
+            <div class="card">
+              <img src="https://picsum.photos/245/120" alt="..." class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title">Unsplash</h2>
+                <p>
+                  Unsplash is a website that offers a large collection of free, high-resolution photos that have been contributed by photographers from around the world. <a class="game-btn" href="https://unsplash.com/">Read more...</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="https://picsum.photos/245/121" alt="..." class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title">Lorem Picsum</h2>
+                <p>
+                  Lorem Picsum is a website that provides placeholder images for use in design and development projects. The website is similar to the popular lorem ipsum text generator<a class="game-btn" href="https://picsum.photos/">Read more...</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="https://picsum.photos/245/122" alt="..." class="card-img-top">
+              <div class="card-body">
+                <h2 class="card-title">Pexels</h2>
+                <p>
+                  One of the main features of Pexels is its search functionality, which allows users to easily find the perfect photo for their project. Users can search for photos using keywords. <a class="game-btn" href="https://www.pexels.com/">Read more...</a>
+                </p>
+              </div>
+            </div>
+            <p> Thanks for reading!</p>
+        </nav>
+        
+        <section class="buttons end">
+        <a
+          class="game-btn button"
+          href="https://www.linkedin.com/in/vamshi-jannu-a6a650200"
+          >By Vamshi jannu</a
+          >
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

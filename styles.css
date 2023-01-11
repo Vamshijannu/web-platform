@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555;
+  line-height: 1.5;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  height: 100vh;
+}
+main {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 4em 1em;
+}
+html.step1 pre {
+  border-left: 2px solid #69c;
+}
+.selector {
+  color: #e81c4f;
+  font-size: 10px;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+h1,
+h2,
+strong {
+  color: #333;
+}
+header {
+  background-color: #263d36;
+  background-image: url(https://images.unsplash.com/photo-1536859355448-76f92ebdc33d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  max-width: 100vw;
+  padding: 10vw 2em;
+  text-align: center;
+  height: 80vh;
+  display: block;
+}
+section {
+  display: none;
+}
+
+#utilize {
+  display: block;
+}
+
+body.step0 #state {
+  display: block;
+}
+
+body.step1 #component {
+  display: block;
+}
+
+body.step2 #dev-tools {
+  display: block;
+}
+
+body.step3 #game {
+  display: block;
+}
+
+body.step4 #splash {
+  display: block;
+}
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 2rem 4rem;
+}
+
+header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background: #e81c4f;
+  color: white;
+}
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+a {
+  color: #e81c4f;
+}
+body {
+  color: #566b78;
+}
+
+code,
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+  border-left: 2px solid #69c;
+  padding: 1em;
+}
+#game #game-img {
+  background-image: url(https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80);
+  height: 25rem;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+.game-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1remn;
+}
+a.button {
+  border: 1px solid #d8dee9;
+  border-radius: 290486px;
+  color: #b0bfc7;
+  padding: 1.2em 2.5em;
+  text-align: center;
+  text-decoration: none;
+}
+.buttons {
+  width: aut;
+  margin-bottom: 1rem;
+}
+
+a.button:hover {
+  background-color: #e81c4f;
+  color: #eee;
+}
+a.facebook:hover {
+  background-color: #3b5998;
+}
+a.github:hover {
+  background-color: rgb(0, 0, 0);
+}
+a.twitter:hover {
+  background-color: #00acee;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 37px auto 0;
+  width: calc(280px * 4);
+}
+
+.card {
+  padding: 1rem;
+  height: auto;
+  box-shadow: 0 3px 10px 0 #aaa;
+  cursor: pointer;
+  position: relative;
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card.visited {
+  box-shadow: 0 3px 10px 2px #444;
+}
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    width: calc(280px * 2);
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+  section {
+    width: 100vw;
+  }
+
+  .cards {
+    display: block;
+    width: 100vw;
+  }
+  .card {
+    margin: 0 auto 2rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  section {
+    padding: 0.5rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.end {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.card-img-top {
+  width: 200px;
+}
